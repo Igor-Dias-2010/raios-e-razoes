@@ -1,16 +1,13 @@
-import Image from "next/image";
+import Link from "next/link";
+
 export default function Navbar() {
     return (
         <div>
             <nav>
-                <figure>
-                    <Image
-                        src={"/imgs/logo-raios-e-razoes-removebg-preview.png"}
-                        alt="Logo do Raios e Razões"
-                        width={250}
-                        height={140}
-                    ></Image>
-                </figure>
+                <Link href={'/'}>Início</Link>
+                <Link href={'/equipe'}>Equipe</Link>
+                <Link href={'/pesquisas'}>Pesquisas</Link>
+                <Link href={'/graficos'}>Gráficos</Link>
             </nav>
         </div>
     );
