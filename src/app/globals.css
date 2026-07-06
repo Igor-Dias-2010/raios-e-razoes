@@ -9,6 +9,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: rgb(24, 26, 27);
+    color: white;
 }
 nav {
     background-color: rgb(0, 2, 97);
@@ -56,7 +58,7 @@ figcaption {
     text-align: center;
 }
 figure {
-    border: 2px solid black;
+    border: 2px solid rgb(140, 130, 115);
     border-radius: 20px;
     margin-bottom: 50px;
 }
@@ -65,17 +67,17 @@ figure {
     border-radius: 20px;
     display: block;
 }
-table,
+table {
+    border: 2px solid rgb(140, 130, 115);
+    border-radius: 3px;
+}
 thead,
 th,
 tr,
-tbody,
-td {
-    border: 2px solid black;
-}
 td {
     padding-left: 3px;
     padding-right: 3px;
+    border: 1px solid rgb(140, 130, 115);
 }
 thead th {
     padding-left: 3px;
@@ -86,4 +88,7 @@ table {
 }
 h1 {
     padding-top: 60px;
+}
+.graficos{
+    margin-top: 20px;
 }
