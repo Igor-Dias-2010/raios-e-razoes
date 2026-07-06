@@ -5,19 +5,85 @@
 }
 body {
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 nav {
     background-color: rgb(0, 2, 97);
     color: white;
     height: 45px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
 }
 a {
     margin-left: 10px;
     margin-right: 10px;
     color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
 }
-nav {
-    display: flex;
-    justify-content: center;
+a:hover {
+    text-decoration: underline;
+    color: yellow;
+    font-size: 19px;
+}
+.ativo {
+    color: yellow;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 19px;
+}
+.fotos {
+    margin-top: 50px;
+    display: grid;
     align-items: center;
+    justify-items: center;
+    grid-template-columns: 2fr 2fr;
+    gap: 50px;
+}
+figcaption {
+    text-align: center;
+}
+figure {
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 50px;
+}
+.image {
+    border: 2px solid black;
+    border-radius: 20px;
+    display: block;
+}
+table,
+thead,
+th,
+tr,
+tbody,
+td {
+    border: 2px solid black;
+}
+td {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+thead th {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+table {
+    margin-bottom: 30px;
+}
+h1 {
+    padding-top: 60px;
 }
