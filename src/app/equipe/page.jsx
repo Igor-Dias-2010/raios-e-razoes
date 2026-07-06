@@ -14,8 +14,8 @@ export default function Equipe() {
                         className="image"
                         src={"/imgs/foto-igor.jpeg"}
                         alt="foto do líder"
-                        width={200}
-                        height={200}
+                        width={250}
+                        height={250}
                     />
                 </figure>
                 <figure>
@@ -25,8 +25,8 @@ export default function Equipe() {
                         className="image"
                         src={"/imgs/foto-leo.jpeg"}
                         alt="foto do Léo"
-                        width={200}
-                        height={200}
+                        width={250}
+                        height={250}
                     />
                 </figure>
                 <figure>
@@ -36,8 +36,8 @@ export default function Equipe() {
                         className="image"
                         src={"/imgs/foto-nikolas.jpeg"}
                         alt="foto do Nikolas"
-                        width={200}
-                        height={200}
+                        width={250}
+                        height={250}
                     />
                 </figure>
                 <figure>
@@ -47,8 +47,8 @@ export default function Equipe() {
                         className="image"
                         src={"/imgs/foto-dudu.jpeg"}
                         alt="foto do Eduardo"
-                        width={200}
-                        height={200}
+                        width={250}
+                        height={250}
                     />
                 </figure>
                 <figure>
@@ -58,8 +58,8 @@ export default function Equipe() {
                         className="image"
                         src={"/imgs/foto-otavio.jpeg"}
                         alt="foto do Otávio"
-                        width={200}
-                        height={200}
+                        width={250}
+                        height={250}
                     />
                 </figure>
             </div>
