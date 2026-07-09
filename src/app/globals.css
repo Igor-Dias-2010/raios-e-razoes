@@ -96,7 +96,10 @@ h1 {
     .fotos {
         grid-template-columns: 2fr 2fr;
     }
-    .graficos{
+    .graficos {
         width: 100%;
     }
+}
+body::selection {
+    background-color: rgb(0, 3, 177);
 }
