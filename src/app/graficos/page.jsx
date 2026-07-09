@@ -32,6 +32,18 @@ export default function Graficos() {
                             <td>89%</td>
                         </tr>
                     </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Estacionamento</td>
+                            <td>09/07/2026</td>
+                            <td>22°C</td>
+                            <td>72%</td>
+                            <td>19.4°C</td>
+                            <td>71.7%</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
                 </table>
                 <h2>Semana 2</h2>
                 <table>
