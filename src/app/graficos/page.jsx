@@ -6,8 +6,8 @@ export default function Graficos() {
             <Navbar />
             <h1>Gráficos</h1>
             <div className="graficos">
-                <h2>Semana 1</h2>
                 <table>
+                    <caption>Semana 1</caption>
                     <thead>
                         <tr>
                             <th>LOCAL</th>
@@ -45,8 +45,8 @@ export default function Graficos() {
                         </tr>
                     </tbody>
                 </table>
-                <h2>Semana 2</h2>
                 <table>
+                    <caption>Semana 2</caption>
                     <thead>
                         <tr>
                             <th>DATA</th>
@@ -59,8 +59,8 @@ export default function Graficos() {
                         </tr>
                     </thead>
                 </table>
-                <h2>Semana 3</h2>
                 <table>
+                    <caption>Semana 3</caption>
                     <thead>
                         <tr>
                             <th>DATA</th>
