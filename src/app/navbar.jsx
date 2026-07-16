@@ -24,11 +24,12 @@ export default function Navbar() {
                     Pesquisas
                 </Link>
                 <Link
-                    href={"/graficos"}
-                    className={pathname === "/graficos" ? "ativo" : ""}
+                    href={"/tabelas"}
+                    className={pathname === "/tabelas" ? "ativo" : ""}
                 >
-                    Gráficos
+                    Tabelas
                 </Link>
+                <Link href={"/graficos"} className={pathname === "/graficos" ? "ativo" : ""}>Gráficos</Link>
             </nav>
         </div>
     );
