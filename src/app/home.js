@@ -6,7 +6,8 @@ export default function Home() {
             <h1>Raios e Razões</h1>
             <p>
                 Esse é um trabalho de matemática onde iremos analisar a
-                temperatura e umidade de diferentes pontos da escola
+                temperatura e umidade do estacionamento da escola SESI de
+                Florianópolis.
             </p>
         </div>
     );

@@ -10,7 +10,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(24, 26, 27);
+    background-color: rgb(25, 25, 25);
     color: white;
 }
 
@@ -28,6 +28,7 @@ nav {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
     border-bottom-left-radius: 100%;
     border-bottom-right-radius: 100%;
+    z-index: 99999;
 }
 
 a {
@@ -133,12 +134,26 @@ caption {
 
 .pesquisas {
     margin-top: 30px;
+    background-color: rgb(30, 30, 30);
     border: 3px solid blue;
     border-radius: 10px;
     width: 500px;
     padding: 15px;
+    transition: 0.5s;
 }
-.pesquisas:last-of-type{
+.pesquisas:hover {
+    animation: pulse-border 0.6s infinite alternate;
+    background-color: rgb(20, 20, 20);
+}
+@keyframes pulse-border {
+    from {
+        box-shadow: 0 0 5px blue;
+    }
+    to {
+        box-shadow: 0 0 15px blue;
+    }
+}
+.pesquisas:last-of-type {
     margin-bottom: 30px;
 }
 
