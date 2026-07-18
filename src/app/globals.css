@@ -15,15 +15,15 @@ body {
     background-color: rgb(25, 25, 25);
     color: white;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: 6px;
     height: 6px;
 }
-::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb {
     background-color: blue;
     border-radius: 10px;
 }
-::-webkit-scrollbar-track{
+::-webkit-scrollbar-track {
     background-color: rgb(20, 20, 20);
 }
 nav {
@@ -38,8 +38,6 @@ nav {
     align-items: center;
     position: fixed;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
-    border-bottom-left-radius: 100%;
-    border-bottom-right-radius: 100%;
     z-index: 99999;
 }
 
@@ -175,5 +173,9 @@ li {
     }
     .pesquisas {
         width: 500px;
+    }
+    nav {
+        border-bottom-left-radius: 100%;
+        border-bottom-right-radius: 100%;
     }
 }
