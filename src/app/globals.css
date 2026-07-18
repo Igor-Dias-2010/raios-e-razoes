@@ -122,6 +122,9 @@ h1 {
     .tabelas {
         width: 100%;
     }
+    .pesquisas{
+        width: 300px;
+    }
 }
 
 body::selection {
