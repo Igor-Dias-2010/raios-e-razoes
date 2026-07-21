@@ -192,3 +192,17 @@ li {
 .semanas:last-of-type {
     margin-bottom: 30px;
 }
+button{
+    width: 85px;
+    height: 25px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: rgb(20, 20, 20);
+}

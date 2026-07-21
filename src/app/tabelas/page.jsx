@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Navbar from "../navbar";
 
 export default function Tabelas() {
@@ -109,6 +110,7 @@ export default function Tabelas() {
                     </tbody>
                 </table>
             </div>
+            <Link href={"/graficos"}><button>Ver gráficos</button></Link>
         </div>
     );
 }
