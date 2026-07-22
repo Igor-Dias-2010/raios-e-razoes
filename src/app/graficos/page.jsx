@@ -140,6 +140,7 @@ export default function Graficos() {
                             fill="#e92a2a"
                         >
                             <LabelList
+                                className="label-barra"
                                 dataKey="Temperatura_LABDISC"
                                 position="top"
                                 formatter={(value) => `${value}°C`}
@@ -152,6 +153,7 @@ export default function Graficos() {
                             fill="#00a300"
                         >
                             <LabelList
+                                className="label-barra"
                                 dataKey="Temperatura_Internet"
                                 position="top"
                                 formatter={(value) => `${value}°C`}
@@ -183,6 +185,7 @@ export default function Graficos() {
                         <Tooltip />
                         <Bar dataKey="Umidade_Kit" fill="#3434c7">
                             <LabelList
+                                className="label-barra"
                                 dataKey="Umidade_Kit"
                                 position="top"
                                 formatter={(value) => `${value}%`}
@@ -191,6 +194,7 @@ export default function Graficos() {
                         </Bar>
                         <Bar dataKey="Umidade_LABDISC" fill="#e92a2a">
                             <LabelList
+                                className="label-barra"
                                 dataKey="Umidade_LABDISC"
                                 position="top"
                                 formatter={(value) => `${value}%`}
@@ -199,6 +203,7 @@ export default function Graficos() {
                         </Bar>
                         <Bar dataKey="Umidade_Internet" fill="#00a300">
                             <LabelList
+                                className="label-barra"
                                 dataKey="Umidade_Internet"
                                 position="top"
                                 formatter={(value) => `${value}%`}
@@ -233,6 +238,7 @@ export default function Graficos() {
                         <Tooltip />
                         <Bar dataKey="Temperatura_Kit" fill="#3434c7">
                             <LabelList
+                                className="label-barra"
                                 dataKey="Temperatura_Kit"
                                 position="top"
                                 formatter={(value) => `${value}°C`}
@@ -241,6 +247,7 @@ export default function Graficos() {
                         </Bar>
                         <Bar dataKey="Temperatura_LABDISC" fill="#e92a2a">
                             <LabelList
+                                className="label-barra"
                                 dataKey="Temperatura_LABDISC"
                                 position="top"
                                 formatter={(value) => `${value}°C`}
@@ -249,6 +256,7 @@ export default function Graficos() {
                         </Bar>
                         <Bar dataKey="Temperatura_Internet" fill="#00a300">
                             <LabelList
+                                className="label-barra"
                                 dataKey="Temperatura_Internet"
                                 position="top"
                                 formatter={(value) => `${value}°C`}
@@ -280,6 +288,7 @@ export default function Graficos() {
                         <Tooltip />
                         <Bar dataKey="Umidade_Kit" fill="#3434c7">
                             <LabelList
+                                className="label-barra"
                                 dataKey="Umidade_Kit"
                                 position="top"
                                 formatter={(value) => `${value}%`}
@@ -288,6 +297,7 @@ export default function Graficos() {
                         </Bar>
                         <Bar dataKey="Umidade_LABDISC" fill="#e92a2a">
                             <LabelList
+                                className="label-barra"
                                 dataKey="Umidade_LABDISC"
                                 position="top"
                                 formatter={(value) => `${value}%`}
@@ -296,6 +306,7 @@ export default function Graficos() {
                         </Bar>
                         <Bar dataKey="Umidade_Internet" fill="#00a300">
                             <LabelList
+                                className="label-barra"
                                 dataKey="Umidade_Internet"
                                 position="top"
                                 formatter={(value) => `${value}%`}
