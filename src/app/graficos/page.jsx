@@ -9,6 +9,7 @@ import {
     CartesianGrid,
     Tooltip,
     Legend,
+    ResponsiveContainer,
 } from "recharts";
 
 const temperaturaSemana1 = [
@@ -93,118 +94,78 @@ const umidadeSemana2 = [
 ];
 export default function Graficos() {
     return (
-        <div>
+        <div className="page-graficos">
             <Navbar />
             <h1>Gráficos</h1>
             <div className="semanas">
                 <h2>Semana 1</h2>
                 <h3>Temperatura</h3>
-                <BarChart className="graficos" width={600} height={300} data={temperaturaSemana1}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="dias" />
-                    <YAxis />
-                    <Tooltip />
-                    <Bar
-                        dataKey="Temperatura_Kit"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#3434c7"
-                    />
-                    <Bar
-                        dataKey="Temperatura_LABDISC"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#e92a2a"
-                    />
-                    <Bar
-                        dataKey="Temperatura_Internet"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#00a300"
-                    />
-                    <Legend />
-                </BarChart>
+                <ResponsiveContainer width="100%" aspect={2}>
+                    <BarChart data={temperaturaSemana1}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="dias" />
+                        <YAxis />
+                        <Tooltip />
+                        <Bar
+                            dataKey="Temperatura_Kit"
+                            animationBegin={500}
+                            fill="#3434c7"
+                        />
+                        <Bar
+                            dataKey="Temperatura_LABDISC"
+                            animationBegin={500}
+                            fill="#e92a2a"
+                        />
+                        <Bar
+                            dataKey="Temperatura_Internet"
+                            animationBegin={500}
+                            fill="#00a300"
+                        />
+                        <Legend />
+                    </BarChart>
+                </ResponsiveContainer>
                 <h3>Umidade</h3>
-                <BarChart width={600} height={300} data={umidadeSemana1}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="dias" />
-                    <YAxis />
-                    <Tooltip />
-                    <Bar
-                        dataKey="Umidade_Kit"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#3434c7"
-                    />
-                    <Bar
-                        dataKey="Umidade_LABDISC"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#e92a2a"
-                    />
-                    <Bar
-                        dataKey="Umidade_Internet"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#00a300"
-                    />
-                    <Legend />
-                </BarChart>
+                <ResponsiveContainer width="100%" aspect={2}>
+                    <BarChart data={umidadeSemana1}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="dias" />
+                        <YAxis />
+                        <Tooltip />
+                        <Bar dataKey="Umidade_Kit" fill="#3434c7" />
+                        <Bar dataKey="Umidade_LABDISC" fill="#e92a2a" />
+                        <Bar dataKey="Umidade_Internet" fill="#00a300" />
+                        <Legend />
+                    </BarChart>
+                </ResponsiveContainer>
             </div>
             <div className="semanas">
                 <h2>Semana 2</h2>
                 <h3>Temperatura</h3>
-                <BarChart width={600} height={300} data={temperaturaSemana2}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="dias" />
-                    <YAxis />
-                    <Tooltip />
-                    <Bar
-                        dataKey="Temperatura_Kit"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#3434c7"
-                    />
-                    <Bar
-                        dataKey="Temperatura_LABDISC"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#e92a2a"
-                    />
-                    <Bar
-                        dataKey="Temperatura_Internet"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#00a300"
-                    />
-                    <Legend />
-                </BarChart>
+                <ResponsiveContainer width="100%" aspect={2}>
+                    <BarChart data={temperaturaSemana2}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="dias" />
+                        <YAxis />
+                        <Tooltip />
+                        <Bar dataKey="Temperatura_Kit" fill="#3434c7" />
+                        <Bar dataKey="Temperatura_LABDISC" fill="#e92a2a" />
+                        <Bar dataKey="Temperatura_Internet" fill="#00a300" />
+                        <Legend />
+                    </BarChart>
+                </ResponsiveContainer>
                 <h3>Umidade</h3>
-                <BarChart width={600} height={300} data={umidadeSemana2}>
-                    <CartesianGrid strokeDasharray="3 3" />
-                    <XAxis dataKey="dias" />
-                    <YAxis />
-                    <Tooltip />
-                    <Bar
-                        dataKey="Umidade_Kit"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#3434c7"
-                    />
-                    <Bar
-                        dataKey="Umidade_LABDISC"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#e92a2a"
-                    />
-                    <Bar
-                        dataKey="Umidade_Internet"
-                        animationDuration={1000}
-                        animationBegin={500}
-                        fill="#00a300"
-                    />
-                    <Legend />
-                </BarChart>
+                <ResponsiveContainer width="100%" aspect={2}>
+                    <BarChart data={umidadeSemana2}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="dias" />
+                        <YAxis />
+                        <Tooltip />
+                        <Bar dataKey="Umidade_Kit" fill="#3434c7" />
+                        <Bar dataKey="Umidade_LABDISC" fill="#e92a2a" />
+                        <Bar dataKey="Umidade_Internet" fill="#00a300" />
+                        <Legend />
+                    </BarChart>
+                </ResponsiveContainer>
             </div>
         </div>
     );
