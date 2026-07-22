@@ -91,7 +91,6 @@ figure {
     grid-column: 1 /-1;
     justify-self: center;
 }
-
 table {
     border: 2px solid rgb(140, 130, 115);
     border-radius: 3px;
@@ -196,6 +195,9 @@ button:hover {
 .page-graficos {
     width: 100%;
 }
+p {
+    width: 300px;
+}
 @media (min-width: 1080px) {
     .fotos {
         grid-template-columns: 2fr 2fr;
@@ -211,7 +213,11 @@ button:hover {
         border-bottom-left-radius: 100%;
         border-bottom-right-radius: 100%;
     }
+    p{
+        width: 100%;
+    }
 }
+
 @media (max-width: 768px) {
     .label-barra {
         display: none;
