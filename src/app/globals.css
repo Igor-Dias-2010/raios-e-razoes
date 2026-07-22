@@ -213,7 +213,7 @@ button:hover {
         border-bottom-left-radius: 100%;
         border-bottom-right-radius: 100%;
     }
-    p{
+    .p-inicio{
         width: 100%;
     }
 }
