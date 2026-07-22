@@ -10,6 +10,7 @@ import {
     Tooltip,
     Legend,
     ResponsiveContainer,
+    LabelList,
 } from "recharts";
 
 const temperaturaSemana1 = [
@@ -101,39 +102,108 @@ export default function Graficos() {
                 <h2>Semana 1</h2>
                 <h3>Temperatura</h3>
                 <ResponsiveContainer width="100%" aspect={1.3}>
-                    <BarChart data={temperaturaSemana1}>
-                        <CartesianGrid strokeDasharray="3 3" />
+                    <BarChart
+                        data={temperaturaSemana1}
+                        margin={{
+                            top: 30,
+                            right: 20,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid
+                            stroke="#5f5f5f"
+                            strokeDasharray="4 4"
+                            horizontal={true}
+                            vertical={false}
+                        />
                         <XAxis dataKey="dias" />
-                        <YAxis />
+                        <YAxis domain={[0, 26]} />
                         <Tooltip />
+
                         <Bar
                             dataKey="Temperatura_Kit"
                             animationBegin={500}
                             fill="#3434c7"
-                        />
+                        >
+                            <LabelList
+                                dataKey="Temperatura_Kit"
+                                position="top"
+                                formatter={(value) => `${value}°C`}
+                                fill="white"
+                            />
+                        </Bar>
                         <Bar
                             dataKey="Temperatura_LABDISC"
                             animationBegin={500}
                             fill="#e92a2a"
-                        />
+                        >
+                            <LabelList
+                                dataKey="Temperatura_LABDISC"
+                                position="top"
+                                formatter={(value) => `${value}°C`}
+                                fill="white"
+                            />
+                        </Bar>
                         <Bar
                             dataKey="Temperatura_Internet"
                             animationBegin={500}
                             fill="#00a300"
-                        />
+                        >
+                            <LabelList
+                                dataKey="Temperatura_Internet"
+                                position="top"
+                                formatter={(value) => `${value}°C`}
+                                fill="white"
+                            />
+                        </Bar>
                         <Legend />
                     </BarChart>
                 </ResponsiveContainer>
                 <h3>Umidade</h3>
                 <ResponsiveContainer width="100%" aspect={1.3}>
-                    <BarChart data={umidadeSemana1}>
-                        <CartesianGrid strokeDasharray="3 3" />
+                    <BarChart
+                        data={umidadeSemana1}
+                        margin={{
+                            top: 30,
+                            right: 20,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid
+                            stroke="#5f5f5f"
+                            strokeDasharray="4 4"
+                            horizontal={true}
+                            vertical={false}
+                        />
                         <XAxis dataKey="dias" />
                         <YAxis />
                         <Tooltip />
-                        <Bar dataKey="Umidade_Kit" fill="#3434c7" />
-                        <Bar dataKey="Umidade_LABDISC" fill="#e92a2a" />
-                        <Bar dataKey="Umidade_Internet" fill="#00a300" />
+                        <Bar dataKey="Umidade_Kit" fill="#3434c7">
+                            <LabelList
+                                dataKey="Umidade_Kit"
+                                position="top"
+                                formatter={(value) => `${value}%`}
+                                fill="white"
+                            />
+                        </Bar>
+                        <Bar dataKey="Umidade_LABDISC" fill="#e92a2a">
+                            <LabelList
+                                dataKey="Umidade_LABDISC"
+                                position="top"
+                                formatter={(value) => `${value}%`}
+                                fill="white"
+                            />
+                        </Bar>
+                        <Bar dataKey="Umidade_Internet" fill="#00a300">
+                            <LabelList
+                                dataKey="Umidade_Internet"
+                                position="top"
+                                formatter={(value) => `${value}%`}
+                                fill="white"
+                            />
+                        </Bar>
                         <Legend />
                     </BarChart>
                 </ResponsiveContainer>
@@ -142,27 +212,95 @@ export default function Graficos() {
                 <h2>Semana 2</h2>
                 <h3>Temperatura</h3>
                 <ResponsiveContainer width="100%" aspect={1.3}>
-                    <BarChart data={temperaturaSemana2}>
-                        <CartesianGrid strokeDasharray="3 3" />
+                    <BarChart
+                        data={temperaturaSemana2}
+                        margin={{
+                            top: 30,
+                            right: 20,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid
+                            stroke="#5f5f5f"
+                            strokeDasharray="4 4"
+                            horizontal={true}
+                            vertical={false}
+                        />
                         <XAxis dataKey="dias" />
-                        <YAxis />
+                        <YAxis domain={[0, 26]} />
                         <Tooltip />
-                        <Bar dataKey="Temperatura_Kit" fill="#3434c7" />
-                        <Bar dataKey="Temperatura_LABDISC" fill="#e92a2a" />
-                        <Bar dataKey="Temperatura_Internet" fill="#00a300" />
+                        <Bar dataKey="Temperatura_Kit" fill="#3434c7">
+                            <LabelList
+                                dataKey="Temperatura_Kit"
+                                position="top"
+                                formatter={(value) => `${value}°C`}
+                                fill="white"
+                            />
+                        </Bar>
+                        <Bar dataKey="Temperatura_LABDISC" fill="#e92a2a">
+                            <LabelList
+                                dataKey="Temperatura_LABDISC"
+                                position="top"
+                                formatter={(value) => `${value}°C`}
+                                fill="white"
+                            />
+                        </Bar>
+                        <Bar dataKey="Temperatura_Internet" fill="#00a300">
+                            <LabelList
+                                dataKey="Temperatura_Internet"
+                                position="top"
+                                formatter={(value) => `${value}°C`}
+                                fill="white"
+                            />
+                        </Bar>
                         <Legend />
                     </BarChart>
                 </ResponsiveContainer>
                 <h3>Umidade</h3>
                 <ResponsiveContainer width="100%" aspect={1.3}>
-                    <BarChart data={umidadeSemana2}>
-                        <CartesianGrid strokeDasharray="3 3" />
+                    <BarChart
+                        data={umidadeSemana2}
+                        margin={{
+                            top: 30,
+                            right: 20,
+                            left: 20,
+                            bottom: 5,
+                        }}
+                    >
+                        <CartesianGrid
+                            stroke="#5f5f5f"
+                            strokeDasharray="4 4"
+                            horizontal={true}
+                            vertical={false}
+                        />
                         <XAxis dataKey="dias" />
                         <YAxis />
                         <Tooltip />
-                        <Bar dataKey="Umidade_Kit" fill="#3434c7" />
-                        <Bar dataKey="Umidade_LABDISC" fill="#e92a2a" />
-                        <Bar dataKey="Umidade_Internet" fill="#00a300" />
+                        <Bar dataKey="Umidade_Kit" fill="#3434c7">
+                            <LabelList
+                                dataKey="Umidade_Kit"
+                                position="top"
+                                formatter={(value) => `${value}%`}
+                                fill="white"
+                            />
+                        </Bar>
+                        <Bar dataKey="Umidade_LABDISC" fill="#e92a2a">
+                            <LabelList
+                                dataKey="Umidade_LABDISC"
+                                position="top"
+                                formatter={(value) => `${value}%`}
+                                fill="white"
+                            />
+                        </Bar>
+                        <Bar dataKey="Umidade_Internet" fill="#00a300">
+                            <LabelList
+                                dataKey="Umidade_Internet"
+                                position="top"
+                                formatter={(value) => `${value}%`}
+                                fill="white"
+                            />
+                        </Bar>
                         <Legend />
                     </BarChart>
                 </ResponsiveContainer>
