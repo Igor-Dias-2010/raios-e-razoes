@@ -127,6 +127,7 @@ export default function Graficos() {
                             fill="#3434c7"
                         >
                             <LabelList
+                                className="label-barra"
                                 dataKey="Temperatura_Kit"
                                 position="top"
                                 formatter={(value) => `${value}°C`}

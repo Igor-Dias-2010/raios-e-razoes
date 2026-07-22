@@ -212,3 +212,8 @@ button:hover {
         border-bottom-right-radius: 100%;
     }
 }
+@media (max-width: 768px) {
+    .label-barra {
+        display: none;
+    }
+}
