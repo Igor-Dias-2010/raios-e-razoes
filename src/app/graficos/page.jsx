@@ -100,7 +100,7 @@ export default function Graficos() {
             <div className="semanas">
                 <h2>Semana 1</h2>
                 <h3>Temperatura</h3>
-                <ResponsiveContainer width="100%" aspect={1.5}>
+                <ResponsiveContainer width="100%" aspect={1.3}>
                     <BarChart data={temperaturaSemana1}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="dias" />
@@ -125,7 +125,7 @@ export default function Graficos() {
                     </BarChart>
                 </ResponsiveContainer>
                 <h3>Umidade</h3>
-                <ResponsiveContainer width="100%" aspect={1.5}>
+                <ResponsiveContainer width="100%" aspect={1.3}>
                     <BarChart data={umidadeSemana1}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="dias" />
@@ -141,7 +141,7 @@ export default function Graficos() {
             <div className="semanas">
                 <h2>Semana 2</h2>
                 <h3>Temperatura</h3>
-                <ResponsiveContainer width="100%" aspect={1.5}>
+                <ResponsiveContainer width="100%" aspect={1.3}>
                     <BarChart data={temperaturaSemana2}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="dias" />
@@ -154,7 +154,7 @@ export default function Graficos() {
                     </BarChart>
                 </ResponsiveContainer>
                 <h3>Umidade</h3>
-                <ResponsiveContainer width="100%" aspect={1.5}>
+                <ResponsiveContainer width="100%" aspect={1.3}>
                     <BarChart data={umidadeSemana2}>
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="dias" />
