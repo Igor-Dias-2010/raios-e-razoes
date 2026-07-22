@@ -195,7 +195,7 @@ button:hover {
 .page-graficos {
     width: 100%;
 }
-p {
+.p-inicio {
     width: 300px;
 }
 @media (min-width: 1080px) {
